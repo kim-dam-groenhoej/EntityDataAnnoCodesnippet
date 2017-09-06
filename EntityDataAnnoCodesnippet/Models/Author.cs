@@ -14,9 +14,13 @@ namespace EntityDataAnnoCodesnippet.Models
 
         public string Name { get; set; }
 
+        // Denne skal sættes på når der er relation til denne "Author" 2 eller flere gange fra "Blog"
+        // Navnenet i InverseProperty er den property i "blog" - den høre til
         [InverseProperty("CreatedAuthor")]
         public virtual ICollection<Blog> CreatedBlogs { get; set; }
 
+        // Denne skal sættes på når der er relation til denne "Author" 2 eller flere gange fra "Blog"
+        // Navnenet i InverseProperty er den property i "blog" - den høre til
         [InverseProperty("UpdatedAuthor")]
         public virtual ICollection<Blog> UpdatedBlogs { get; set; }
     }

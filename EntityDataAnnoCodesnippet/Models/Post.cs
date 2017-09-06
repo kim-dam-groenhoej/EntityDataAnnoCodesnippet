@@ -17,6 +17,7 @@ namespace EntityDataAnnoCodesnippet.Models
         [Column("amount", TypeName="decimal")]
         public int Amount { get; set; }
 
+        // Denne property kommer ikke i databasen. Featuren kan stadig bruges i C#
         [NotMapped]
         public bool IsInStock {
             get
@@ -32,6 +33,7 @@ namespace EntityDataAnnoCodesnippet.Models
 
         public string Content { get; set; }
 
+        // Stadnard værdi i databasen, så den ikke ka være null
         [DefaultValue(true)]
         public bool IsActive { get; set; }
        

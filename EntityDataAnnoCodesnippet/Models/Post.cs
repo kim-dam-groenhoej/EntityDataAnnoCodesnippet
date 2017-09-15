@@ -38,6 +38,7 @@ namespace EntityDataAnnoCodesnippet.Models
         public bool IsActive { get; set; }
        
         public int BlogId { get; set; }
-        
+
+        public virtual ICollection<Comment> Comments { get; set; }
     }
 }

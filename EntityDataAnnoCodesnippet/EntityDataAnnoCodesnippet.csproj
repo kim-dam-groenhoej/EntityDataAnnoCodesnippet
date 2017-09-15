@@ -158,6 +158,7 @@
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Blog.cs" />
     <Compile Include="Models\BlogDetails.cs" />
+    <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\Navigation.cs" />
     <Compile Include="Models\Page.cs" />
     <Compile Include="Models\Post.cs" />
